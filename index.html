@@ -3,55 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #888;
-        }
-        .contact {
-            margin-top: 20px;
-        }
-        .contact a {
-            color: #0077b5;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome, I am Filippo 👋</h1>
-        <p>I am a freelance software engineer with a passion for building efficient and scalable applications.</p>
-        <p>With experience in backend and cloud development, I help businesses streamline their technology stack.</p>
-        <div class="contact">
-            <p>Contact me:</p>
-            <p><a href="https://www.linkedin.com/in/filippobrintazzoli/" target="_blank">Reach out on LinkedIn</a></p>
-        </div>
-        <div class="footer">&copy; 2025 - All rights reserved.</div>
+        <header>
+            <img src="./my-notion-face-transparent.png" alt="Profile Picture" class="profile-pic">
+            <h1>Hello, I'm Filippo 👋</h1>
+            <p class="title">DevOps Engineer</p>
+        </header>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                ☁️ I am an eager-to-learn <b>full-remote Software Engineer</b> working on the Cloud from Italy. <br>
+                📈 My focus areas are <b>Observability and Kubernetes</b>, while I am also passionate about UI/UX and have a strong background in <b>Javascript</b> development and Start-Up management. <br>
+                ☝️ In the last couple of years, I have delivered Observability-as-a-Service collecting up to 5 million active series and 4k logs per second per instance, achieving a solid knowledge of <b>Grafana, Prometheus</b>, Thanos, Loki, and Fluent, along with Kubernetes, Helm and Docker. <br>
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>Helm</li>
+                <li>GPUaaS</li>
+                <li>Observability</li>
+                <li>Grafana</li>
+                <li>Prometheus</li>
+                <li>Thanos</li>
+                <li>Loki</li>
+                <li>Fluent</li>
+                <li>AWS</li>
+                <li>Terraform</li>
+                <li>CI/CD</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Bash</li>
+                <li>Linux</li>
+                <li>Git</li>
+                <li>UI/UX</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/filippobrintazzoli/" class="social-link">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/brint97" class="social-link">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+        </section>
     </div>
 </body>
 </html>
