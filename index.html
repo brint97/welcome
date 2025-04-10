@@ -1,65 +1,691 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img src="./my-notion-face-transparent.png" alt="Profile Picture" class="profile-pic">
-            <h1>Hello, I'm Filippo 👋</h1>
-            <p class="title">DevOps Engineer</p>
-        </header>
-
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                ☁️ I am an eager-to-learn <b>full-remote Software Engineer</b> working on the Cloud from Italy. <br>
-                📈 My focus areas are <b>Observability and Kubernetes</b>, while I am also passionate about UI/UX and have a strong background in <b>Javascript</b> development and Start-Up management. <br>
-                ☝️ In the last couple of years, I have delivered Observability-as-a-Service collecting up to 5 million active series and 4k logs per second per instance, achieving a solid knowledge of <b>Grafana, Prometheus</b>, Thanos, Loki, and Fluent, along with Kubernetes, Helm and Docker. <br>
-            </p>
-        </section>
-
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Kubernetes</li>
-                <li>Docker</li>
-                <li>Helm</li>
-                <li>GPUaaS</li>
-                <li>Observability</li>
-                <li>Grafana</li>
-                <li>Prometheus</li>
-                <li>Thanos</li>
-                <li>Loki</li>
-                <li>Fluent</li>
-                <li>AWS</li>
-                <li>Terraform</li>
-                <li>CI/CD</li>
-                <li>Javascript</li>
-                <li>Python</li>
-                <li>Bash</li>
-                <li>Linux</li>
-                <li>Git</li>
-                <li>UI/UX</li>
-            </ul>
-        </section>
-
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/filippobrintazzoli/" class="social-link">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://github.com/brint97" class="social-link">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-            </div>
-        </section>
-    </div>
-</body>
-</html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Filippo Brintazzoli - Resume </title><style>
+    /* cspell:disable-file */
+    /* webkit printing magic: print all background colors */
+    html {
+        -webkit-print-color-adjust: exact;
+    }
+    * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen {
+        body {
+            margin: 2em auto;
+            max-width: 900px;
+            color: rgb(55, 53, 47);
+        }
+    }
+    
+    body {
+        line-height: 1.5;
+        white-space: pre-wrap;
+    }
+    
+    a,
+    a.visited {
+        color: inherit;
+        text-decoration: underline;
+    }
+    
+    .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+    }
+    
+    h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    
+    .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+    }
+    
+    .callout {
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    
+    figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+    }
+    
+    figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+    }
+    
+    mark {
+        background-color: transparent;
+    }
+    
+    .indented {
+        padding-left: 1.5em;
+    }
+    
+    hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    @media only print {
+        img {
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    
+    .collection-content {
+        font-size: 0.875rem;
+    }
+    
+    .column-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        padding: 0 1em;
+    }
+    
+    .column:first-child {
+        padding-left: 0;
+    }
+    
+    .column:last-child {
+        padding-right: 0;
+    }
+    
+    .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+    }
+    
+    .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+    }
+    
+    .table_of_contents-indent-2 {
+        margin-left: 3rem;
+    }
+    
+    .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+    }
+    
+    .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+    }
+    
+    table {
+        border-left: none;
+        border-right: none;
+    }
+    
+    th,
+    td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+    }
+    
+    th {
+        color: rgba(55, 53, 47, 0.6);
+    }
+    
+    ol,
+    ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+    }
+    
+    li > ol:first-child,
+    li > ul:first-child {
+        margin-block-start: 0.6em;
+    }
+    
+    ul > li {
+        list-style: disc;
+    }
+    
+    ul.to-do-list {
+        padding-inline-start: 0;
+    }
+    
+    ul.to-do-list > li {
+        list-style: none;
+    }
+    
+    .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+    }
+    
+    ul.toggle > li {
+        list-style: none;
+    }
+    
+    ul {
+        padding-inline-start: 1.7em;
+    }
+    
+    ul > li {
+        padding-left: 0.1em;
+    }
+    
+    ol {
+        padding-inline-start: 1.6em;
+    }
+    
+    ol > li {
+        padding-left: 0.2em;
+    }
+    
+    .mono ol {
+        padding-inline-start: 2em;
+    }
+    
+    .mono ol > li {
+        text-indent: -0.4em;
+    }
+    
+    .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+    }
+    
+    /* Indent toggle children */
+    .toggle > li > details {
+        padding-left: 1.7em;
+    }
+    
+    .toggle > li > details > summary {
+        margin-left: -1.1em;
+    }
+    
+    .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+    }
+    
+    .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    
+    .page-description {
+        margin-bottom: 2em;
+    }
+    
+    .simple-table {
+        margin-top: 1em;
+        font-size: 0.875rem;
+        empty-cells: show;
+    }
+    .simple-table td {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table th {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table-header-color {
+        background: rgb(247, 246, 243);
+        color: black;
+    }
+    .simple-table-header {
+        font-weight: 500;
+    }
+    
+    time {
+        opacity: 0.5;
+    }
+    
+    .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+    }
+    
+    img.icon {
+        border-radius: 3px;
+    }
+    
+    .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+    .user-icon-inner {
+        font-size: 0.8em;
+    }
+    
+    .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-height: 30vh;
+    }
+    
+    .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+    }
+    
+    .page-header-icon img {
+        border-radius: 3px;
+    }
+    
+    .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+    }
+    
+    p > .user {
+        opacity: 0.5;
+    }
+    
+    td > .user,
+    td > time {
+        white-space: nowrap;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+    }
+    
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    .code,
+    code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+    }
+    
+    code {
+        color: #eb5757;
+    }
+    
+    .code {
+        padding: 1.5em 1em;
+    }
+    
+    .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+    }
+    
+    blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+    }
+    
+    .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+    .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+    }
+    
+    .bookmark-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+    }
+    
+    .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+    }
+    
+    .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+    }
+    
+    .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+    .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+    .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+    .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+    .pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+    .pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+    .pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+    .pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+    .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+    .pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+    .pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+    .pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+    .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .highlight-default {
+        color: rgba(55, 53, 47, 1);
+    }
+    .highlight-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+    }
+    .highlight-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+    }
+    .highlight-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+    }
+    .highlight-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+    }
+    .highlight-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+    }
+    .highlight-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+    }
+    .highlight-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+    }
+    .highlight-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+    }
+    .highlight-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+    }
+    .highlight-default_background {
+        color: rgba(55, 53, 47, 1);
+    }
+    .highlight-gray_background {
+        background: rgba(248, 248, 247, 1);
+    }
+    .highlight-brown_background {
+        background: rgba(244, 238, 238, 1);
+    }
+    .highlight-orange_background {
+        background: rgba(251, 236, 221, 1);
+    }
+    .highlight-yellow_background {
+        background: rgba(251, 243, 219, 1);
+    }
+    .highlight-teal_background {
+        background: rgba(237, 243, 236, 1);
+    }
+    .highlight-blue_background {
+        background: rgba(231, 243, 248, 1);
+    }
+    .highlight-purple_background {
+        background: rgba(248, 243, 252, 1);
+    }
+    .highlight-pink_background {
+        background: rgba(252, 241, 246, 1);
+    }
+    .highlight-red_background {
+        background: rgba(253, 235, 236, 1);
+    }
+    .block-color-default {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+    }
+    .block-color-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+    }
+    .block-color-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+    }
+    .block-color-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+    }
+    .block-color-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+    }
+    .block-color-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+    }
+    .block-color-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+    }
+    .block-color-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+    }
+    .block-color-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+    }
+    .block-color-default_background {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray_background {
+        background: rgba(248, 248, 247, 1);
+    }
+    .block-color-brown_background {
+        background: rgba(244, 238, 238, 1);
+    }
+    .block-color-orange_background {
+        background: rgba(251, 236, 221, 1);
+    }
+    .block-color-yellow_background {
+        background: rgba(251, 243, 219, 1);
+    }
+    .block-color-teal_background {
+        background: rgba(237, 243, 236, 1);
+    }
+    .block-color-blue_background {
+        background: rgba(231, 243, 248, 1);
+    }
+    .block-color-purple_background {
+        background: rgba(248, 243, 252, 1);
+    }
+    .block-color-pink_background {
+        background: rgba(252, 241, 246, 1);
+    }
+    .block-color-red_background {
+        background: rgba(253, 235, 236, 1);
+    }
+    .select-value-color-uiBlue { background-color: undefined; }
+    .select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+    .select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+    .select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+    .select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+    .select-value-color-transparentGray { background-color: undefined; }
+    .select-value-color-translucentGray { background-color: undefined; }
+    .select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+    .select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+    .select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+    .select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+    .select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+    .select-value-color-pageGlass { background-color: undefined; }
+    .select-value-color-washGlass { background-color: undefined; }
+    
+    .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    
+    .checkbox-on {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+    
+    .checkbox-off {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+        
+    </style></head><body><article id="042bb557-6cb5-415d-a61f-3d15243f7401" class="page mono"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/gradients_3.png" style="object-position:center 34.589999999999996%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="resume/icona_foto.png"/></div><h1 class="page-title">Filippo Brintazzoli - Resume </h1><p class="page-description"></p></header><div class="page-body"><blockquote id="c2b58938-9e55-4cf3-a9af-62aac68662e0" class=""><em><mark class="highlight-gray"><strong>DevOps Engineer @ ClearML </strong></mark></em><mark class="highlight-gray"><strong>|</strong></mark><em><mark class="highlight-gray"><strong> Observability Enthusiast </strong></mark></em><mark class="highlight-gray"><strong>|</strong></mark><em><mark class="highlight-gray"><strong> Kubernetes</strong></mark></em></blockquote><p id="3c389a29-2835-4c91-b7c6-3b94100fa964" class=""><mark class="highlight-gray">Public link to this page at </mark><mark class="highlight-gray"><a href="index.html"><img class="icon" src="resume/icona_foto.png"/>Filippo Brintazzoli - Resume </a></mark></p><p id="4b1ebb6c-c01a-4f29-889e-de23f773bef3" class="block-color-gray">🌓 Toggle dark mode with <mark class="highlight-gray"><code>cmd/ctrl</code></mark> + <mark class="highlight-gray"><code>shift</code></mark> + <mark class="highlight-gray"><code>L</code></mark></p><hr id="932b2099-20fd-4a19-a2c6-dc85dff2b0bd"/><div id="c5881572-a4c7-45aa-b258-2c2fc2c48054" class="column-list"><div id="6cafb3eb-2add-4ced-ba42-256930e1d88c" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="217d4dcc-b8fd-48f8-9b26-370a7cff2f68"><div style="font-size:1.5em"><span class="icon">👋</span></div><div style="width:100%">I am an eager-to-learn <strong>Software Engineer</strong> working in the Cloud from Italy.<br/>My focus areas are <br/><strong>Distributed Observability</strong> and <strong>Kubernetes</strong>, while I am also passionate about UI/UX and have a strong background in <strong>Javascript</strong> development and Start-Up management.</div></figure></div><div id="951a9648-f1d3-407f-b1bb-be5b50268e5e" style="width:50.00000000000002%" class="column"><h3 id="a6d7ef32-195e-4c6b-b8d4-1db092b812d5" class=""><strong>Contacts</strong></h3><p id="51e2e7d0-dc91-4af4-b32d-5c7d016bd7b8" class=""><a href="mailto:filippobrintazzoli@gmail.com">📧 filippobrintazzoli@gmail.com</a></p><p id="13c892a2-f71b-4c2a-930c-8ed0edd9d54a" class=""><a href="https://www.linkedin.com/in/filippobrintazzoli/">🔗 linkedin.com/in/filippobrintazzoli</a></p><p id="cf36d80e-c302-4d78-b46d-233578a57e0d" class=""><a href="https://gitlab.com/brint97">👾 gitlab.com/brint97</a></p></div></div><h1 id="4222133e-be9c-4985-a151-2d8076552f3b" class="">Experience 👨🏻‍💻</h1><h3 id="2ba285ec-ea85-452b-998b-6f8072252b20" class="">DevOps Engineer (Freelance)</h3><p id="1b9dda69-b8a0-4be1-a55b-956ddaeae2ef" class=""><strong><a href="https://clear.ml/"><mark class="highlight-gray"><em>ClearMl</em></mark></a></strong><mark class="highlight-gray"><em>, Remote, Italy – (Apr 2024 - Present)</em></mark></p><p id="161a82fb-d1c3-806d-a414-cf65a919ed64" class="">All-things infrastructure and platform - Kubernetes focus.</p><ul id="161a82fb-d1c3-8069-9b93-d25cdf18d751" class="bulleted-list"><li style="list-style-type:disc">Prototyping solutions for small and enterprise-grade AI/ML operations in mixed environments (Kubernetes and Docker, cloud and bare metal, including GPUs).</li></ul><ul id="161a82fb-d1c3-80d9-8eb2-e8e4d653a489" class="bulleted-list"><li style="list-style-type:disc">Setup and support critical customer-facing environments in all phases from POC to Production.</li></ul><ul id="161a82fb-d1c3-80c8-a594-da109ef8d1ed" class="bulleted-list"><li style="list-style-type:disc">Develop internal tools, processes, and monitoring.</li></ul><ul id="161a82fb-d1c3-80b2-aecb-c780d7fb674d" class="bulleted-list"><li style="list-style-type:disc">Maintaining Open Source components.</li></ul><ul id="161a82fb-d1c3-8073-8305-d53eac478a31" class="bulleted-list"><li style="list-style-type:disc">Involved in all software stages. Reporting to CTO.</li></ul><h3 id="d57bb528-1614-48a8-a992-05b91bde95af" class="">Observability Tech Lead</h3><p id="81f9489d-2fe8-430a-b9ef-88065c0526ae" class=""><em><mark class="highlight-gray"><strong>Infovista</strong></mark></em><em><mark class="highlight-gray"> (</mark></em><em><mark class="highlight-gray"><a href="https://www.infovista.com/solutions/network-lifecycle-automation/nla-cloud-platform">NLA Cloud Platform</a></mark></em><em><mark class="highlight-gray">), Remote, Italy – (Jan 2023 - Apr 2024)</mark></em></p><p id="1aa25386-8fca-493a-b01e-4963ef6ca8ab" class="">Over the last couple of years, as a Tech Lead and part of the Platform team, I <strong>delivered Observability-as-a-Service</strong> for the NLA <strong>Cloud Platform</strong>.</p><p id="38c894db-2c26-4ccf-99a1-1aac5a0ee04d" class="">The centralized observability platform is collecting data (metrics, logs, traces) from <strong>distributed multi-cluster environments</strong>, observing thousands of microservices in production.</p><p id="eca7753d-2b7d-4386-9711-d8fb5c97b43c" class="">A single instance of our observability platform has been keeping up with <strong>5 million active series</strong> and ingesting up to <strong>4k logs per second</strong>, collected from up to 70 Kubernetes clusters, hundreds of Nodes, and 5k running Pods in production.</p><p id="08a3fbce-2f20-4b51-aff8-e7b8bd934899" class="">Skills in <em><a href="https://grafana.com/grafana/">Grafana</a></em>, <em><a href="https://prometheus.io/">Prometheus</a></em>, <em><a href="https://thanos.io/">Thanos</a></em>, <em><a href="https://grafana.com/oss/loki/">Loki</a></em>, <em><a href="https://fluentbit.io/">Fluent Bit</a></em>, <em><a href="https://www.fluentd.org/">Fluentd</a></em>, <em><a href="https://grafana.com/oss/tempo/">Tempo</a></em><em>, </em><a href="https://argoproj.github.io/argo-workflows/"><em>Argo Workflows</em></a><em>,</em> and <em><a href="https://min.io/">MinIO</a></em><em>.</em></p><h3 id="0c961dac-437f-4b7b-9f22-bd4e2d1c1d3b" class="">Software Engineer</h3><p id="31f8c759-6d41-4f64-961b-006545b897f4" class=""><strong><mark class="highlight-gray"><em>Empirix/Infovista</em></mark></strong><mark class="highlight-gray"><em> (</em></mark><a href="https://www.infovista.com/solutions/network-lifecycle-automation/nla-cloud-platform"><mark class="highlight-gray"><em>NLACP</em></mark></a><mark class="highlight-gray"><em> and </em></mark><a href="https://www.infovista.com/products/automated-assurance-operations/ativa-suite"><mark class="highlight-gray"><em>Ativa</em></mark></a><mark class="highlight-gray"><em>), Remote, Italy – (Apr 2020 - Jan 2023)</em></mark></p><p id="c9a7ae9b-545b-4c88-b691-1cc5befe0284" class="">I <strong>started leading a four people Agile team</strong> responsible for getting the company observability-ready, creating the product’s distributed monitoring, logging and tracing platforms.</p><p id="1bc7e3dd-4602-4f59-8d92-e95aaf1b68ca" class="">While entering the <strong>cloud observability</strong> world, I also worked on a bunch of other proprietary <strong>microservices</strong> and infrastructure projects getting some mentionable hands-on experience in <em><a href="https://helm.sh">Helm</a></em>, <em><a href="https://www.openapis.org">OpenAPI</a></em>, <a href="https://quarkus.io"><em>Quarkus</em></a>, <em><a href="https://docusaurus.io">Docusaurus</a></em>, <em><a href="https://min.io/">MinIO</a></em>, <a href="https://pulsar.apache.org"><em>Apache Pulsar</em></a>, <em><a href="https://www.rancher.com">Rancher</a></em>, and <a href="https://www.elastic.co/?ultron=B-Stack-Trials-EMEA-S-Exact&amp;gambit=Stack-Core&amp;blade=adwords-s&amp;hulk=paid&amp;Device=m&amp;thor=elasticsearch&amp;gclid=Cj0KCQjwtsCgBhDEARIsAE7RYh3eWsFmPvHDOaA-UxhqWrzAc9lq2Sv_I2VI2rCvm796B2FR1nG9u9MaApJ0EALw_wcB"><em>ElasticSearch</em></a>.</p><h3 id="cc4d6f73-9b0a-4911-ad2c-d4f00cb186dd" class="">UI Engineer</h3><p id="42d72517-ecee-42df-a812-0970fa47deb4" class=""><strong><mark class="highlight-gray"><em>Empirix</em></mark></strong><mark class="highlight-gray"><em> (now </em></mark><a href="https://www.infovista.com/5g-network/klerity-customer-experience-assurance"><mark class="highlight-gray"><em>Infovista KLERITY</em></mark></a><mark class="highlight-gray"><em>), Modena, Italy – (Oct 2018 - Apr 2020)</em></mark></p><p id="796efd9f-c517-4888-807d-d3bbef93ed9c" class="">My team was dedicated to the <strong>UI design</strong> and development<em> </em>of <strong>proprietary data analysis and dashboard reporting tools</strong> for telco. My primary tasks included heavy data manipulation and visualization using <em>AngularJS</em>, <em>jQuery,</em> and <a href="https://d3js.org"><em>D3JS</em></a>, both in <strong>Cloud</strong> and bare metal environments.</p><h3 id="945656c0-215b-4b37-a19c-41dd4ea3b538" class="">Founder</h3><p id="cf1db918-7866-4d86-92aa-71b1a13c0a14" class="block-color-gray"><a href="https://www.linkedin.com/company/wast-it/"><em><strong>Wast</strong></em></a><em>, Bologna, Italy – (Jul 2018 - Feb 2019) - </em>Related to </p><p id="a08e950a-ec0c-4c39-b054-e875bd890c6d" class="">Wast started as an experiment to deeply study the <strong>indie apparel business</strong> and the waste produced by humanity (and yes, it was before Greta).</p><ul id="425fdc79-1cbd-4db9-a5e7-212e52955ae6" class="bulleted-list"><li style="list-style-type:disc">Designed and developed the main <a href="https://brint97.gitlab.io/wast.it/index.html">website (wast.it)</a></li></ul><ul id="f1a75137-0934-4751-bb54-90963453913a" class="bulleted-list"><li style="list-style-type:disc">Maintained the <strong>online</strong> stores (<a href="https://www.bigcartel.com"><em>BigCartel</em></a>, <a href="https://www.printful.com/"><em>Printful</em></a>, Integrations) and <strong>offline</strong> shops relations</li></ul><ul id="8b64038e-801f-46ea-b14c-80ff96c42381" class="bulleted-list"><li style="list-style-type:disc">Managed and created content for <strong>social media</strong></li></ul><ul id="0dd78e44-9972-4835-acbb-78d18741512e" class="bulleted-list"><li style="list-style-type:disc">Designed sketches and logos for apparel and merchandising (<a href="https://affinity.serif.com/en-us/designer/"><em>Affinity Designer/Photo</em></a>)</li></ul><ul id="d1e24755-ceaf-4caa-ba82-efadc3262593" class="bulleted-list"><li style="list-style-type:disc">Overall management of the business</li></ul><p id="09407f85-28f6-4c3f-b9f9-0e335e39af4a" class="">I am really proud of the product we created and the great feedback we received (and still receive sometimes).</p><h3 id="3f67a377-da56-40b3-97f3-b7f5d89974db" class=""><strong>Tech and Design Lead (Co-Founder)</strong></h3><p id="6783db21-4565-4e2d-83da-1fb4fb343ab2" class="block-color-gray"><a href="https://www.linkedin.com/company/akolanguage/about/"><em><strong>AKO</strong></em></a><em>, Bologna, Italy – (Mar 2018 - Dec 2018)</em></p><p id="ae6cb657-c6f4-4225-a1b3-9f45ca061ec2" class="">AKO was the first <strong>peer-to-peer educational platform</strong>, selected by the University of Bologna 2018 “<strong>Start-up Day</strong>” event among over 400 participants.</p><ul id="13920e38-56bc-4f01-a047-5ed2d00da453" class="bulleted-list"><li style="list-style-type:disc">Designed and developed the AKO logo and <strong>visual identity</strong></li></ul><ul id="2a94866b-1a95-46ae-aaaa-622ef613e112" class="bulleted-list"><li style="list-style-type:disc">Advising on the whole startup process in tech, business, and related fields</li></ul><ul id="0f883914-008d-4817-96ae-871544c8a340" class="bulleted-list"><li style="list-style-type:disc">Creating and maintaining the startup’s website and the approach for a mobile app</li></ul><p id="c7daaae1-d527-442b-9bf4-0beee8fb4fd6" class="">
+    </p><hr id="077ba07a-7844-43e3-9fbb-3d9cfd9e505d"/><h1 id="039c107a-5ef6-4fb7-af6c-8973ab5429a6" class="">Skills &amp; Certifications 💯</h1><h3 id="f9327006-3ebe-4b32-8f40-b977ac9e75e7" class="">Kubernetes</h3><p id="066eff26-66d5-4afe-971d-c4d4533b2fb0" class="">Working with it on a daily basis, I have a strong Kubernetes knowledge, as well as <a href="https://helm.sh/"><em>Helm</em></a><em>,</em> <a href="https://www.docker.com/"><em>Docker</em></a><em>,</em> and generally Cloud Native projects, ecosystem, and Microservices development<em>.</em></p><p id="1f94d8f4-ba5b-44e6-a5bb-cef03504d7ac" class="">In 2023 I got my <strong><a href="https://www.credly.com/badges/f6b9b558-764f-4097-9d76-e5cf0db5b9d2/public_url">CKAD</a></strong><a href="https://www.credly.com/badges/f6b9b558-764f-4097-9d76-e5cf0db5b9d2/public_url"> Certification</a> from <a href="https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/">The Linux Foundation</a>.</p><h3 id="3a15503c-4098-4b69-80ca-0f4d7c295cf1" class="">Observability</h3><p id="5f23a118-67c6-432f-a875-2552d4fe4578" class="">Being working on a daily basis in distributed cloud Observability, I have achieved great knowledge with tools such as:</p><ul id="1aaf41c1-05f0-4ca8-a5ab-7f5a11b19744" class="bulleted-list"><li style="list-style-type:disc"><a href="https://grafana.com/grafana/"><em><strong>Grafana</strong></em></a> for <em>everything</em> from telemetry data visualization, dashboarding, provisioning, plugins, and alerting.</li></ul><ul id="093190f3-08b0-4866-aa56-9a4de918742b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://prometheus.io/"><em><strong>Prometheus</strong></em></a>, its <a href="https://github.com/prometheus-operator/prometheus-operator">Operator</a>, <a href="https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack">kube-prometheus-stack</a>, its Client Libraries, and a bunch of other Exporters.<br/>In 2023 I got my <br/><strong><a href="https://www.credly.com/badges/b9acd44f-2de2-4280-85ee-4b5ba9708040/public_url">PCA</a></strong><a href="https://www.credly.com/badges/b9acd44f-2de2-4280-85ee-4b5ba9708040/public_url"> Certification</a> from <a href="https://training.linuxfoundation.org/certification/prometheus-certified-associate/">The Linux Foundation</a>.</li></ul><ul id="827dccc6-cc5f-4a75-862b-45404afcfec0" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://thanos.io/">Thanos</a></strong></em> and all its components, both in pull and push-based architectures.</li></ul><ul id="c807d478-3b7b-4c1e-b9af-b6046fe4c022" class="bulleted-list"><li style="list-style-type:disc"><a href="https://grafana.com/oss/loki/"><em><strong>Loki</strong></em></a> for both applications logging and other events-oriented use cases such as Auditing.</li></ul><ul id="d64d376c-5480-46fd-8803-092d917a4c96" class="bulleted-list"><li style="list-style-type:disc"><em><strong><a href="https://fluentbit.io/">Fluent Bit</a></strong></em> and the <a href="https://github.com/fluent/fluent-operator"><em>Fluent Operator</em></a><em>.</em></li></ul><h3 id="57791af7-eb98-427e-98e6-5987a152e0d9" class="">Javascript</h3><p id="906bffb0-d7ab-40b6-a831-fd351e099f20" class="">My &quot;native&quot; programming language. I find it easy to read and I have a solid understanding of its capabilities and limits, as well as its ecosystem. I have used Javascript for both jobs and personal projects.</p><h3 id="2dff930f-2e5b-4166-96d3-4d6a61dda903" class="">Python</h3><p id="9d7d5525-5447-4311-991e-f1fb5008346c" class="">Intermediate level, I&#x27;ve started using it more recently. I&#x27;m not fully proficient yet but I keep pushing.</p><h3 id="f9c5aab5-f665-4266-959c-dc412a819cdf" class="">Java</h3><p id="0a1db282-bf73-494f-bdfc-b0e1b9499c5a" class="">Intermediate level, I have also worked using the <a href="https://quarkus.io"><em>Quarkus</em></a> framework.</p><h3 id="402534e2-7c3c-4495-972f-d402c27c6d67" class="">React Native</h3><p id="0beed655-c716-4e4c-a865-fc50b9dd1977" class="">I use this for a bunch of mobile-development <a href="index.html">Personal Projects</a>.</p><h3 id="c6b70fd1-d43a-4d3f-b06b-03c3a8549103" class="">Technical writing</h3><p id="01596638-61d5-4d18-b017-66c19ed441b7" class="">I enjoy writing about technical subjects and I feel I can do a pretty good job of it. I am even thinking of starting <a href="index.html">my own newsletter</a>! My motivation is explaining things in clear and pragmatic terms, making things easier for others.</p><h3 id="90db5f45-4a6e-4982-9972-3b24618aaaab" class="">Agile and Scrum</h3><p id="692580e1-b72d-4f13-9743-094d55b6d735" class="">I like Scrum and I do have some experience as a Scrum Master, following all its rituals.</p><h3 id="21ee4756-5b22-4050-8462-3bc91f5f764c" class="">Others</h3><p id="dd9ee456-dac2-4e46-845b-32d26aef870d" class="">Here is a list of a few other stuff I know and worked with:</p><p id="fc00c697-bd15-4099-97b5-c3c146cba697" class=""><em><a href="https://git-scm.com/">Git</a></em>, <em><a href="https://www.notion.so/">Notion</a></em>, Bash scripting, <em><a href="https://www.atlassian.com/it/software/jira">Jira</a></em>, OpenAPI, Jenkins, GPUs on Kubernetes, Docker Compose, <em><a href="https://min.io/">MinIO</a></em>, <em><a href="https://argoproj.github.io/argo-workflows/">Argo Workflows</a></em>, Digital illustration, <em><a href="https://www.figma.com">Figma</a></em>, HTML, CSS, jQuery, Quarkus, <em><a href="https://docusaurus.io/">Docusaurus</a></em>, <em><a href="https://firebase.google.com/">Firebase</a></em>, YAML, Markdown, <em><a href="https://monika.hyperjump.tech/">Monika</a></em>, Lua, <em><a href="https://www.elastic.co/">ElasticSearch</a></em>, SQL, <em><a href="https://pulsar.apache.org/">Pulsar</a></em>, Social Media, <em><a href="https://www.arduino.cc/">Arduino</a></em>, C, PHP, and of course I am <strong>good at Googling</strong> 🙂</p><p id="d4641424-6511-4771-b07f-da9eb71421dd" class="">
+    </p><hr id="c5f1b546-5ccc-4027-bafc-f8ff6fd8c3b4"/><h1 id="f6bd7e2b-126d-4563-bec9-911cd3f8dd9c" class="">Languages</h1><div id="e1f209a9-c911-475d-b717-41aa17426a57" class="column-list"><div id="7c66b8ab-67a9-47ea-b357-6c371a8cc387" style="width:33.33333333333333%" class="column"><h3 id="7d0e7487-f2a6-4a54-8997-5f2b21a2e068" class="">Italian 🇮🇹</h3><p id="0a3cf350-467c-4241-957e-3765fcf8446c" class="">Native speaker</p></div><div id="d6ec6281-d044-4134-a090-6a9747b01a35" style="width:33.33333333333333%" class="column"><h3 id="812b29b1-54ff-40d6-9747-f0602e417642" class="">English 🇺🇸</h3><p id="bc76412a-e13c-4ba7-8d44-0a161ffc4d58" class="">C2 Proficient</p></div><div id="8b8f02e9-f19c-4947-b30b-80d8e4c5f36d" style="width:33.33333333333333%" class="column"><h3 id="b6e6b949-bd37-49f8-9fdf-247548262bd0" class="">Spanish 🇪🇸</h3><p id="fa9cad36-a578-42a6-b172-886e09c47b21" class="">Basic knowledge</p></div></div><ul id="a3300580-7c2f-473d-be38-6d262a5434e5" class="bulleted-list"><li style="list-style-type:disc">Certification by <a href="https://www.efset.org/cert/Vf7Xjm">EF SET English Certificate 84/100 (C2 Proficient)</a></li></ul><p id="0715ddcb-c6a1-4470-9a70-199da2f4b296" class="">
+    </p><hr id="655c6533-4fb3-4915-a56c-dbe1c4b805e5"/><h1 id="9b9901d2-d251-42c5-8138-ccb623d82893" class="">Projects 💻</h1><h3 id="d67deaf1-601a-4660-b188-631a1374b241" class="">The Ramen Bowl</h3><p id="d060e6d3-0274-4848-b8ea-8618101c37ac" class=""><mark class="highlight-gray"><em>May 2023 - Present</em></mark></p><p id="37ea24b6-59ca-45be-9b19-56d7938aefd6" class="">The Ramen Bowl is a bi-weekly foodie newsletter for nerds. Aiming to experiment and introduce more people to the Japanese cuisine world.</p><p id="934f8c73-08db-4eda-b209-a676e2adc7c1" class="">Some stats:</p><ul id="5a2ee564-48a9-4543-9494-c0d1aee44b69" class="bulleted-list"><li style="list-style-type:disc">1000 followers</li></ul><ul id="de2de9dd-1ca8-4bf4-b6df-900a258fe1fd" class="bulleted-list"><li style="list-style-type:disc">600 active subscribers so far</li></ul><ul id="67db62dc-1bee-4bb2-bc77-bc7ececbb51b" class="bulleted-list"><li style="list-style-type:disc">50% average open rate</li></ul><ul id="d1726141-c52c-4b8b-bb01-8f5f50d61eef" class="bulleted-list"><li style="list-style-type:disc">1500 average monthly views</li></ul><ul id="b97eb379-63fd-455b-a5a2-47a3e55d0058" class="bulleted-list"><li style="list-style-type:disc">A few hundred dollars pledged</li></ul><figure id="718b0586-a93a-4c94-b97c-b74504babc95"><a href="https://theramenbowl.substack.com/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Ramen Bowl | Substack</div><div class="bookmark-description">A techie and foodie nerd telling stories about Ramen. Get bi-weekly posts with recipes, suggestions, thoughts, and experiments. - ◡ -. Click to read The Ramen Bowl, a Substack publication. Launched 2 months ago.</div></div><div class="bookmark-href"><img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8bb4a493-9d0b-45cc-9467-6e07d56b203a%2Fapple-touch-icon-1024x1024.png" class="icon bookmark-icon"/>https://theramenbowl.substack.com/</div></div><img src="https://substackcdn.com/image/fetch/f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Ftheramenbowl.substack.com%2Ftwitter%2Fsubscribe-card.jpg%3Fv%3D1001036083%26version%3D9" class="bookmark-image"/></a></figure><h3 id="0f180000-b51f-4c09-86b6-baa1d8fcbd57" class="">Pizzer (on hold)</h3><p id="31268646-50ca-49bf-b95f-5212bc824db2" class="block-color-gray"><em>Mar 2021 - Present</em></p><p id="911c2eb1-75ce-426f-a1dc-9df759be4d76" class="">Still working on that! Stay tuned ;)</p><h3 id="419999cc-5904-48da-94f5-47ff33e0a8f4" class="">QUACKERS</h3><p id="ccd1782a-2e83-41c2-b97a-e15beae8a821" class="block-color-gray"><em>Jan 2023 - Jun 2023</em></p><p id="ab22bf95-7097-4fc5-bb41-8fc8b1307fc0" class="">As ChatGPT was released and making waves, we (3 people) wanted to start a &quot;real-world&quot; project with it. We pitched a card game idea. Our goal: make a funnier version of Uno with nicer graphics.</p><p id="ed765263-a393-43b3-8430-ce07c04880b8" class="">Who doesn&#x27;t love ducks? Especially rubber ducks, every programmer&#x27;s best friend. The project was born.</p><p id="247980d8-b25b-4f13-9607-99a8035cf470" class="">From hand-written POCs to the final product, it was a quick journey. In 3 months we created it, printed out card decks, and played tons of games.</p><p id="21e6f695-8793-4eba-a5f1-7e49634ca23d" class="">So fun, and so many things learned on the path.</p><figure id="9d09bf7d-e715-4aed-9e8f-500024ca9396" class="image"><a href="resume/quackers_cards.jpg"><img style="width:708px" src="resume/quackers_cards.jpg"/></a></figure><h3 id="207b0229-e591-437f-880a-bce72c1864fd" class="">Runmate</h3><p id="0a98e039-7378-42b6-8e6e-5705456e8590" class="block-color-gray"><em>May 2020 - Dec 2020 (DISCONTINUED)</em></p><p id="b8aa7da5-63fa-4f62-b070-1c076a5b7143" class="">Started developing a new business and mobile app called Runmate, where Runners and Coaches could get in contact in real-time.</p><p id="db629ae8-a6d0-4ceb-8334-c0b54a6f28af" class="">The Runmate app was built using <a href="https://reactnative.dev"><em>React Native</em></a> and Google <a href="https://firebase.google.com/"><em>Firebase</em></a>, it included:</p><ul id="edbe646c-28d9-4fef-85b1-411273950d2f" class="bulleted-list"><li style="list-style-type:disc">Design System (<a href="https://www.figma.com"><em>Figma</em></a>)</li></ul><ul id="df783ac1-974e-43b3-a590-f2fe1ff89b2d" class="bulleted-list"><li style="list-style-type:disc">Authentication (Email, Phone, Social Auth)</li></ul><ul id="58b66efa-13aa-45bc-967e-9182aeb5f08e" class="bulleted-list"><li style="list-style-type:disc"><em><a href="https://firebase.google.com">Firebase</a></em> (Realtime Database, Storage, Firestore Database, Functions, Analytics, AdMob)</li></ul><ul id="a230a3f6-d22f-4505-900d-f0eb8ea17137" class="bulleted-list"><li style="list-style-type:disc">Geolocalization APIs for real-time altitude and speed tracking</li></ul><ul id="4e68068c-77ec-47b1-8e99-4ba73f7ab1ec" class="bulleted-list"><li style="list-style-type:disc"><a href="https://developer.apple.com/documentation/healthkit"><em>HealthKit</em></a> integration for real-time heartbeat tracking</li></ul><ul id="952bca79-e482-44d5-944b-14fc33ce557e" class="bulleted-list"><li style="list-style-type:disc">Matchmaking for Runners and Coaches</li></ul><ul id="4eb67fe3-b801-4a13-992a-279e71c72cac" class="bulleted-list"><li style="list-style-type:disc">Charts (<em><a href="https://github.com/indiespirit/react-native-chart-kit">react-native-chart-kit</a></em>)</li></ul><ul id="39b17a91-4584-4524-8f02-8d2cbe481568" class="bulleted-list"><li style="list-style-type:disc">Some nice animations using Airbnb <a href="https://airbnb.design/lottie/"><em>Lottie</em></a></li></ul><h3 id="89ddf876-d39b-46ee-b56b-680cdb8421e6" class="">Website for Wast</h3><p id="5d09add8-d7ae-4111-b596-e1d23e38d5e1" class="block-color-gray"><em>Nov 2018 - Dec 2018 (DISCONTINUED)</em></p><p id="77a80906-d4a8-403e-836e-31f746fb5404" class="">Simple website and shop integration (<a href="https://www.bigcartel.com"><em>BigCartel</em></a>) built with just <em>jQuery</em>.<br/>NB: The website has been DISCONTINUED and the project has been moved to GitLab Pages for showcasing.<br/></p><figure id="772721f0-8a99-4079-86bb-b98f28367e81"><a href="https://brint97.gitlab.io/wast.it/index.html" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Home - Wast</div><div class="bookmark-description">We are Wast, a clothing brand based in Bologna, Italy. Shop now or discover our designs.</div></div><div class="bookmark-href">https://brint97.gitlab.io/wast.it/index.html</div></div><img src="https://brint97.gitlab.io/wast.it/Wast01_Mockup_White_Front_Yellow.jpg" class="bookmark-image"/></a></figure><h3 id="7709c797-511a-4b49-8062-36228af75d1e" class="">Website for “Giornaletto”</h3><p id="540f447c-2531-4807-8848-e7166497a896" class="block-color-gray"><em>Mar 2018 (DISCONTINUED)</em></p><p id="5dc57c9a-087b-484d-84d3-96753a88f721" class="">I was commissioned with the development of a basic website for a local product named “Giornaletto” based in Italy.</p><p id="103a2cb8-fce6-4502-b53a-1a48f56c7223" class="">
+    </p><hr id="790cb596-6c91-4387-b42e-ecf3f2e35873"/><h1 id="fdbd062a-e274-495c-9362-2c7e9b16095a" class="">Education 📚</h1><h3 id="d861fb87-52fb-4f5d-8cf6-61c3fe1e71c5" class=""><strong>Bachelor&#x27;s Degree in Computer Science and Engineering</strong></h3><p id="c02aa104-9cd8-4fbd-bb51-6692ebed1c85" class="block-color-gray"><em>2016 - 2021 (drop-out)</em></p><p id="133fcd4e-8b06-4a37-9c14-501d6bc42536" class=""><a href="https://magazine.unibo.it/archivio/2022/10/13/the-university-of-bologna-ranks-first-in-italy-in-the-times-higher-education-ranking">UniBo - University of Bologna</a>, Italy</p><p id="13712c1a-9547-4573-bb62-ee3d3c36f982" class="">
+    </p><hr id="ff7331c2-21ab-43f5-a342-5ab15f058bf4"/><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Hobbies <strong><strong>🎉</strong></strong></summary><div class="indented"><h3 id="197f057e-878f-4209-a698-149f555e960e" class="">Cooking 🍜</h3><p id="6d00512b-246d-465c-85fa-3d08887cfd17" class="">I am Italian so of course, I love food!</p><p id="63cbb096-200b-47a5-8a73-66b2469cdd8d" class="">I have a soft spot for Asian food and especially making <a href="https://theramenbowl.substack.com/">Ramen</a> (and seeing it go in 10 minutes after spending 3 days making it). Also, I am a beer geek and you will find me sometimes brewing at home.</p><h3 id="0df67400-b85d-4e0e-9d35-4d37a20201ca" class="">Music Production 🎵</h3><p id="fad0d579-7754-4558-bd6f-639cd40ebe87" class="">I have been playing piano since I was 6 years old and recently built my tiny home studio where I love to record new sounds.</p><h3 id="ec389ad4-b53b-49b3-8586-1344f819e3fb" class="">Photography 📷</h3><p id="5ef8e84c-12e4-465f-96e0-2f25cf4ad968" class="">Proud owner of a couple of Fujifilm cameras since 2014, but I also like shooting film.</p><h3 id="00a278dc-2346-4e39-b69d-d9690cc35e23" class="">Board Games 🎲</h3><p id="53cb5eb8-a89f-4c65-b900-d5ef065dbf49" class="">Always up for playing: from the popular ones to the unknown gems, I never miss a chance cause I just love board games. I am even trying to build my own!</p><h3 id="7c7f56eb-41e2-452c-a834-3eed06a28856" class="">Urbex 🏚️</h3><p id="34251b0c-cef6-4574-b878-99286a4dbf61" class="">Shortened form for “<a href="https://en.wikipedia.org/wiki/Urban_exploration">Urban Exploration</a>”, means I like visiting and exploring abandoned places (only the safe ones). Even if it might sound strange at first, it is like visiting an old museum, where story and time have stopped and everything is left intact.</p><h3 id="5fcc2199-ab57-4e9d-9155-ec6e45c8ca22" class="">Rubber Ducks 🦆</h3><p id="6faeed83-d4a1-4fe5-b31b-4210c70f5998" class="">After all, <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging#:~:text=In%20software%20engineering%2C%20rubber%20duck,spoken%20or%20written%20natural%20language.">I am a programmer</a>, so I do have a 13 (and growing) rubber-ducks collection straight in my home office!</p></div></details><p id="03ba14cd-93d1-49e0-bc78-f38f1a9b4c4f" class="">
+    </p><hr id="f5caf2e3-176f-44f7-8ef9-a47b3158d989"/><h1 id="76350eeb-7e7b-4f41-a37e-58c7e929e5c9" class="">Contacts</h1><p id="ad17a9f0-f8ca-446b-8561-5a095067cf8e" class=""><a href="mailto:brint97@gmail.com">📧 brint97@gmail.com</a></p><p id="2db10a72-0eef-4dee-b8b1-9131868d5a5a" class=""><a href="https://www.linkedin.com/in/filippobrintazzoli/">🔗 linkedin.com/in/filippobrintazzoli</a></p><p id="0f25e30c-a10d-4aac-87d8-21b286d0cb6d" class=""><a href="https://gitlab.com/brint97">👾 gitlab.com/brint97</a></p><p id="aafeb60b-e3e6-43de-a54d-69b42e0507ca" class="">
+    </p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="98b4f553-f1ec-402c-a67c-199d08fa8ebd"><div style="font-size:1.5em"><span class="icon">🌗</span></div><div style="width:100%">Toggle dark mode with <mark class="highlight-gray"><code>cmd/ctrl</code></mark><mark class="highlight-gray"> </mark>+ <mark class="highlight-gray"><code>shift</code></mark><mark class="highlight-gray"> </mark>+ <mark class="highlight-gray"><code>L</code></mark></div></figure></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
